@@ -1,0 +1,208 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Navbar */
+.main-header {
+    background-color: #0077b6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo img {
+    width: 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    padding: 50px;
+    background: url('https://smkwikrama1banjarmasin.sch.id/assets2/wk_bjm.png') no-repeat center;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparan 50% */
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Overlay putih transparan */
+    z-index: 1;
+}
+
+#home header {
+    position: relative;
+    z-index: 2;
+}
+
+#home h1 {
+    font-size: 28px;
+    color: #0077b6;
+}
+
+#home p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+/* Profil Sekolah */
+#profil {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.profil-box {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profil-box h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.profil-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profil-box ul li {
+    margin: 5px 0;
+}
+
+.profil-box iframe {
+    border-radius: 8px;
+}
+
+/* Visi & Misi */
+#vision-mission h2, #our-profile h2, #contact h2, #ppdb h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+#vision-mission ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 20px;
+}
+
+#vision-mission ul li {
+    margin: 5px 0;
+}
+
+/* Formulir Kontak */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005f8a;
+}
+
+/* PPDB Section */
+#ppdb {
+    background-color: #0077b6;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#ppdb p {
+    margin-bottom: 15px;
+}
+
+#ppdb button {
+    background-color: white;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+#ppdb button:hover {
+    background-color: #eef2f3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
